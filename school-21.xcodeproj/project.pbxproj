@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		191EF42F29D83F8C006DA754 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 191EF42E29D83F8C006DA754 /* main.c */; };
+		191EF43829D84232006DA754 /* s21_math.c in Sources */ = {isa = PBXBuildFile; fileRef = 191EF43729D84232006DA754 /* s21_math.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		191EF42B29D83F8C006DA754 /* school-21 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "school-21"; sourceTree = BUILT_PRODUCTS_DIR; };
 		191EF42E29D83F8C006DA754 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		191EF43629D84232006DA754 /* s21_math.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s21_math.h; sourceTree = "<group>"; };
+		191EF43729D84232006DA754 /* s21_math.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = s21_math.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				191EF42E29D83F8C006DA754 /* main.c */,
+				191EF43629D84232006DA754 /* s21_math.h */,
+				191EF43729D84232006DA754 /* s21_math.c */,
 			);
 			path = "school-21";
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				191EF43829D84232006DA754 /* s21_math.c in Sources */,
 				191EF42F29D83F8C006DA754 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

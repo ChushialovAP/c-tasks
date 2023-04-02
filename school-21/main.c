@@ -6,9 +6,12 @@
 //
 
 #include <stdio.h>
+#include "s21_math.h"
+#include <math.h>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    printf("%Lf\n", s21_sin(90 * M_PI / 180));
+    printf("%f\n", sin(90 * M_PI / 180));
+   
     return 0;
 }
