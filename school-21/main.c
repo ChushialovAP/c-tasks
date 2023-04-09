@@ -7,11 +7,15 @@
 
 #include <stdio.h>
 #include "s21_math.h"
+#include "s21_string.h"
 #include <math.h>
+#include <string.h>
 
 int main(int argc, const char * argv[]) {
-    printf("%Lf\n", s21_sin(90 * M_PI / 180));
-    printf("%f\n", sin(90 * M_PI / 180));
+    char str1[] = "Quaksasdasd\0"; // Array of size 100
+    char str2[] = "abcz\0"; // Array of size 5
    
+    printf("%zu\n", s21_strlen(str2));
+
     return 0;
 }
