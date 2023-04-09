@@ -221,5 +221,41 @@ size_t s21_strlen(const char *str) {
 
 // Находит первый символ в строке str1, который соответствует любому символу, указанному в str2.
 char *s21_strpbrk(const char *str1, const char *str2) {
+    char * res = NULL;
 
+    while (*(str2) != '\0') {
+        res = s21_strchr(str1, *str2);
+        if (res) {
+            break;
+        }
+        str2++;
+    }
+
+    return res;
+}
+
+// Выполняет поиск последнего вхождения символа c (беззнаковый тип) в строке, на которую указывает аргумент str.
+char *s21_strrchr(const char *str, int c) {
+    int len = s21_strlen(str);
+    char *pStr = (char *)(str + len);
+    void *res = NULL;
+
+    while (len-- >= 0){
+        if (*pStr == (char)c) {
+            res = pStr;
+            break;
+        }
+        pStr--;
+    }
+
+    return res;
+}
+
+// Вычисляет длину начального сегмента str1, который полностью состоит из символов str2.
+size_t s21_strspn(const char *str1, const char *str2) {
+    size_t res = 0;
+
+    while(*str1 != '\0' && s21_strchr(str2, *(str1 + res))) res++;
+
+    return res;
 }

@@ -14,8 +14,10 @@
 int main(int argc, const char * argv[]) {
     char str1[] = "Quaksasdasd\0"; // Array of size 100
     char str2[] = "abcz\0"; // Array of size 5
+
+    int s = strspn(str1, "Qukas");
    
-    printf("%zu\n", s21_strlen(str2));
+    printf("%d\n", s);
 
     return 0;
 }
